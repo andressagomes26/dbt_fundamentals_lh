@@ -74,3 +74,9 @@ dbt compile --select nome_arquivo
 ```shell
 dbt test --select nome_arquivo
 ```
+## Pacotes
+
+- Instalar pacote dbt_utils
+```shell
+dbt deps
+```

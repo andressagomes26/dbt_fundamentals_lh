@@ -12,9 +12,11 @@ with
             , ds_referencia
         from {{ ref('int_clientes') }}
     )
-    -- cte para criar chave surrogate primária
+    -- cte para criar chave surrogate primária sk (haseada)
     , chave_sk as (
-        select *
+        select 
+            {{ dbt_utils.generate_surrogate_key(['id_cliente', 'ds_email']) }} as vendas_sk
+            , *
         from dados_cliente
     )
 
