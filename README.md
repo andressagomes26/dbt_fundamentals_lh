@@ -49,3 +49,8 @@ dbt run
 ```shell
 dbt run --select nome_arquivo
 ```
+
+- Gerar código compilado
+```shell
+dbt compile --select nome_arquivo
+```
