@@ -16,5 +16,5 @@ sources:
               - unique
       - name: status_pedidos
         description: "Tabela de status_pedidos"
-      - name: formas_pagamento
+      - name: formas_pagamentos
         description: "Tabela de formas de pagamento"
