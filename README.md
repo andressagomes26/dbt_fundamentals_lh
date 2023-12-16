@@ -45,3 +45,7 @@ gcloud init
 ```shell
 dbt run
 ```
+
+```shell
+dbt run --select nome_arquivo
+```
