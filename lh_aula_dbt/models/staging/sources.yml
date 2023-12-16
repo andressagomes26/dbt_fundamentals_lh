@@ -8,3 +8,13 @@ sources:
         description: "Tabela de clientes com mais informações"
       - name: clientes
         description: "Tabela de clientes"
+      - name: vendas
+        description: "Tabela de vendas"
+        columns: 
+          - name: id_venda
+            tests:
+              - unique
+      - name: status_pedidos
+        description: "Tabela de status_pedidos"
+      - name: formas_pagamento
+        description: "Tabela de formas de pagamento"
