@@ -41,7 +41,7 @@ dbt debug
 gcloud init
 ```
 
-- Executar
+- Iniciar projeto
 ```shell
 dbt run
 ```
