@@ -5,4 +5,6 @@ sources:
     schema: dados_brutos
     tables:
       - name: cliente_info
+        description: "Tabela de clientes com mais informações"
       - name: clientes
+        description: "Tabela de clientes"
