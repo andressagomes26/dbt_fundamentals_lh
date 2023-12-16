@@ -41,16 +41,29 @@ dbt debug
 gcloud init
 ```
 
+### Executar projeto
+
 - Iniciar projeto
 ```shell
 dbt run
 ```
 
+- Rodar modelo
 ```shell
 dbt run --select nome_arquivo
+```
+
+- Rodar todos os modelos anteriores e posteriores
+```shell
+dbt run --select +nome_arquivo+
 ```
 
 - Gerar código compilado
 ```shell
 dbt compile --select nome_arquivo
+```
+
+### Testes
+```shell
+dbt test --select nome_arquivo
 ```

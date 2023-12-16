@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: dim_clientes
+    columns:
+      - name: id_cliente
+        description: "id único do cliente"
+        tests: 
+          - not_null
+          - unique 
+  
