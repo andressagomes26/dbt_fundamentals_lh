@@ -1,5 +1,7 @@
-# dbt_fundamentals_lh
-dbt_fundamentals_lh
+# Fundamentos do DBT
+
+## O que é DBT?
+O dbt é um fluxo de trabalho de transformação usado para modularizar e centralizar seu código analítico, produzir resultados de maior qualidade, colaborar em modelos de dados, criar versões deles e teste e documentar consultas.
 
 ## Configurações Windowns
 
@@ -56,6 +58,11 @@ dbt run --select nome_arquivo
 - Rodar todos os modelos anteriores e posteriores
 ```shell
 dbt run --select +nome_arquivo+
+```
+
+- Rodar modelo e executar os testes
+```shell
+dbt build --select nome_arquivo
 ```
 
 - Gerar código compilado
