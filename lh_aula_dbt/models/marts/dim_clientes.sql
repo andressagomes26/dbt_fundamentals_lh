@@ -15,7 +15,7 @@ with
     -- cte para criar chave surrogate primária sk (haseada)
     , chave_sk as (
         select 
-            {{ dbt_utils.generate_surrogate_key(['id_cliente', 'ds_email']) }} as vendas_sk
+            {{ dbt_utils.generate_surrogate_key(['id_cliente', 'ds_email']) }} as cliente_sk
             , *
         from dados_cliente
     )

@@ -2,9 +2,18 @@ version: 2
 
 models:
   - name: dim_clientes
+    description: "Dimensão de clientes"
     columns:
       - name: id_cliente
         description: "id único do cliente"
+        tests: 
+          - not_null
+          - unique 
+      - name: cliente_sk
+        description: >
+          "Chave surrogate da tabela cliente. 
+          Foram utilizadas as colunas id_cliente'
+          e 'ds_email'"
         tests: 
           - not_null
           - unique 
