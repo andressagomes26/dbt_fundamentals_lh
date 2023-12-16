@@ -42,4 +42,4 @@ with
     )
 
 select *
-from dados_cliente 
+from final_join 
