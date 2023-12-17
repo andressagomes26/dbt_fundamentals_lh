@@ -8,12 +8,12 @@ O dbt é um fluxo de trabalho de transformação usado para modularizar e centra
 ## <font color = #d75413>Configurações</font>
 
 ### Ambiente Virtual
-- Criar ambiente: 
+- Criar ambiente virtual
 ```shell
 python -m venv venv
 ```
 
-- Ativar amvbiente 
+- Ativar amvbiente virtual
 ```shell
 .\venv\Scripts\Activate.ps1
 ```
@@ -47,22 +47,22 @@ gcloud init
 
 ### Executar Projeto
 
-- Iniciar projeto
+- Executar os modelos 
 ```shell
 dbt run
 ```
 
-- Rodar modelo
+- Executar um modelo específico
 ```shell
 dbt run --select nome_arquivo
 ```
 
-- Rodar todos os modelos anteriores e posteriores
+- Executar todos os modelos anteriores e posteriores
 ```shell
 dbt run --select +nome_arquivo+
 ```
 
-- Rodar modelo e executar os testes
+- Executar os modelo e os testes
 ```shell
 dbt build --select nome_arquivo
 ```
@@ -73,17 +73,17 @@ dbt compile --select nome_arquivo
 ```
 
 ### Testes
-- Testar arquivos
+- Executa os testes
 ```shell
 dbt test --select nome_arquivo
 ```
 
-- Testes na source
+- Executa os testes na source
 ```shell
 dbt test --select "source:*"
 ```
 
-- Testar uma tabela
+- Executa os testes para uma tabela
 ```shell
 dbt test --select source:name.tabela
 ```
@@ -107,7 +107,7 @@ dbt docs generate
 dbt docs serve
 ```
 
-## <font color = #d75413>Referência</font>
+## <font color = #d75413>Referências</font>
 [Documentação dbt](https://docs.getdbt.com/docs/introduction)
 
 [dbt Fundamentals](https://courses.getdbt.com/courses/take/fundamentals/lessons/30210802-welcome)
