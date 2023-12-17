@@ -90,7 +90,7 @@ dbt test --select source:name.tabela
 
 ## Pacotes
 
-- Instalar pacote dbt_utils
+- Instalar pacote (dbt_utils, dbt_date)
 ```shell
 dbt deps
 ```
