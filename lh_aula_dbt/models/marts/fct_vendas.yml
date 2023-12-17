@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: fct_vendas
+    description: "Fato Vendas"
+    columns:
+      - name: id_venda
+        description: "id único do vendas"
+        tests: 
+          - not_null
+          - unique 
+      - name: cliente_fk
+        tests:
+          - relationships:
+              to: ref('dim_clientes')
+              field: cliente_sk
