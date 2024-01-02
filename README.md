@@ -54,28 +54,28 @@ dbt run
 
 - Executar um modelo específico
 ```shell
-dbt run --select nome_arquivo
+dbt run --select <model_name>
 ```
 
 - Executar todos os modelos anteriores e posteriores
 ```shell
-dbt run --select +nome_arquivo+
+dbt run --select +<model_name>+
 ```
 
 - Executar os modelo e os testes
 ```shell
-dbt build --select nome_arquivo
+dbt build --select <model_name>
 ```
 
 - Gerar código compilado
 ```shell
-dbt compile --select nome_arquivo
+dbt compile --select <model_name>
 ```
 
 ### Testes
 - Executa os testes
 ```shell
-dbt test --select nome_arquivo
+dbt test --select <model_name>
 ```
 
 - Executa os testes na source
@@ -85,7 +85,7 @@ dbt test --select "source:*"
 
 - Executa os testes para uma tabela
 ```shell
-dbt test --select source:name.tabela
+dbt test --select source:name.table
 ```
 
 ### Pacotes
